@@ -69,7 +69,7 @@ Enter a date (mm/dd/yy): 3/6/08
 Enter a date (mm/dd/yy): 5/17/07
 Enter a date (mm/dd/yy): 6/3/07
 Enter a date (mm/dd/yy): 0/0/0
-Ngày 5/17/07 is the earliest date.
+5/17/07 is the earliest date.
 
 11. Giá trị của hằng số toán học e có thể được biểu diễn như một dãy vô hạn:
 e = 1 + 1/1! + 1/2! + 1/3! + ....
