@@ -2,8 +2,16 @@
 int main(void)
 {
 int a, b,c,d,e,q;
+do
+{
 printf ("Enter a fraction: ");
 scanf ("%d/%d", &a, &b);
+if (b == 0)
+{
+printf("invalid fraction\n");
+}
+}
+while(b==0);
 c = a;
 d = b;
 if (a < b)
