@@ -19,12 +19,12 @@ Giữ nguyên không thay đổi định dạng xuất: Số dư vẫn được 
 
 6. Một số bạn trẻ thường có cách viết thông điệp riêng trong không gian mạng. 
 Một người dùng có tên B1FF viết một câu như sau: 
-H3Y DUD3, C 15 R1lly COOL!!!!!!!!!!!
+H3Y DUD3, C 15 R1lly COOL!!!!!!!!!!
 Hãy viết một bộ lọc, gọi là "Bộ lọc B1FF" để đọc thông điệp được nhập bởi người dùng và chuyển nó thành dạng 
 tương tự như thông điệp của B1FF:
 
 Enter message: Hey dude, C is rilly cool
-In B1FF-speak: H3Y DUD3, C 15 R1lly COOL!!!!!!!!!!!
+In B1FF-speak: H3Y DUD3, C 15 R1lly COOL!!!!!!!!!!
 
 Chương trình của bạn cần chuyển các chữ cái trong thông điệp thành dạng in hoa, thay đổi một số chữ cái 
 thành chữ số (A -> 4, B -> 8, E -> 3, I -> 1, O -> 0, S -> 5), và sau đó thêm vào tầm 10 dấu chấm than.

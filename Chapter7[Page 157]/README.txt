@@ -84,13 +84,16 @@ Biểu thức được thực hiện từ trái qua phải (không có thứ t�
 
 Enter a sentence: It was deja vu all over again.
 Average word length: 3.4
-Để cho đơn giản, bạn có thể coi các dấu câu được gắn với từ là một phần của từ đó, các từ được ngăn cách bởi dấu cách. Hiển thị giá trị trung bình độ dài với một chữ số sau dấu thập phân.
+Để cho đơn giản, bạn có thể coi các dấu câu được gắn với từ là một phần của từ đó, các từ được 
+ngăn cách bởi dấu cách. Hiển thị giá trị trung bình độ dài với một chữ số sau dấu thập phân.
 
 14. Viết chương trình sử dụng phương pháp Newton để tính căn bậc 2 của một số thực dương:
 
 Enter a positive number: 3
 Square root: 1.73205
-Đặt x là số được nhập bởi người dùng. Phương pháp Newton yêu cầu dự đoán ban đầu y cho căn bậc 2 của x (chúng ta sẽ sử dụng y = 1). Các dự đoán tiếp theo được tính bằng trung bình của y và x/y. Bảng sau chứa thông tin chi tiết về cách tìm căn bậc 2 của 3:
+Đặt x là số được nhập bởi người dùng. Phương pháp Newton yêu cầu dự đoán ban đầu y cho căn bậc 2 
+của x (chúng ta sẽ sử dụng y = 1). Các dự đoán tiếp theo được tính bằng trung bình của y và x/y. 
+Bảng sau chứa thông tin chi tiết về cách tìm căn bậc 2 của 3:
                                  Average of
 x         y         x/y          y and x/y
 3         1          3             2
@@ -98,18 +101,22 @@ x         y         x/y          y and x/y
 3         1.75       1.71429       1.73214
 3         1.73214    1.73196       1.73205
 3         1.73205    1.73205       1.73205
-Có thể nhận thấy y từng bước tiến tới giá trị đúng của căn bậc 2 của x. Để có độ chính xác cao hơn, bạn phải sử dụng kiểu double thay cho float trong chương trình. Tiến trình tính toán dừng khi trị tuyệt đối sai lệch giữa giá trị cũ và giá trị mới của y nhỏ hơn tích của 0.00001 và y.
+Có thể nhận thấy y từng bước tiến tới giá trị đúng của căn bậc 2 của x. Để có độ chính xác cao hơn, 
+bạn phải sử dụng kiểu double thay cho float trong chương trình. Tiến trình tính toán dừng khi trị 
+tuyệt đối sai lệch giữa giá trị cũ và giá trị mới của y nhỏ hơn tích của 0.00001 và y.
 Gợi ý: Bạn có thể sử dụng fabs được khai báo trong tệp tiêu đề math.h để tính giá trị tuyệt đối.
 
 15. Viết chương trình tính giai thừa của một số nguyên dương:
 
 Enter a positive integer: 6
 Factorial of 6: 720
-a) Sử dụng kiểu short để lưu giá trị giai thừa. Giá trị lớn nhất của n mà chương trình in đúng giá trị n! bằng bao nhiêu?
+a) Sử dụng kiểu short để lưu giá trị giai thừa. Giá trị lớn nhất của n mà chương trình in đúng 
+giá trị n! bằng bao nhiêu?
 b) Làm lại phần a nhưng sử dụng kiểu int thay cho short.
 c) - kiểu long.
 d) - long long (nếu trình biên dịch của bạn có hỗ trợ kiểu long long)
 e) - float
 f) - double
 g) - long double
-Trong các trường hợp (e)-(g), chương trình sẽ hiển thị giá trị gần đúng của giai thừa, không nhất thiết phải hiển thị giá trị đúng.
+Trong các trường hợp (e)-(g), chương trình sẽ hiển thị giá trị gần đúng của giai thừa, 
+không nhất thiết phải hiển thị giá trị đúng.
