@@ -56,7 +56,7 @@ You rolled: 8
 Your point is 8
 You rolled: 3
 You rolled: 10
-You rollded: 8
+You rolled: 8
 You win!
 
 Play again? y
@@ -66,7 +66,7 @@ Your point is 6
 You rolled: 5
 You rolled: 12
 You rolled: 3
-You rollded: 7
+You rolled: 7
 You lose!
 
 Play again? y
@@ -76,7 +76,7 @@ You win!
 
 Play again? n
 
-Wins:2   Losses: 1
+Wins: 2   Losses: 1
 
 Viết chương trình bao gồm 3 hàm: main, roll_dice, và play_game. Đây là các nguyên mẫu cho 2 hàm cuối:
 int roll_dice(void);
