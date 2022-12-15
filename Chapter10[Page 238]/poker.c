@@ -85,7 +85,7 @@ while (cards_read < NUM_CARDS) {
     if (bad_card) 
       printf("Bad card; ignored.\n");
      else if (card_exists[rank][suit]) 
-      printf("Duplivate card; ignored.\n");
+      printf("Duplicate card; ignored.\n");
     else {
       num_in_rank[rank]++;
       num_in_suit[suit]++;

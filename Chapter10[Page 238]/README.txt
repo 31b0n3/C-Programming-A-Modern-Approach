@@ -16,7 +16,7 @@ chương trình.
 hàm main sẽ truyền các mảng này như các tham số cho read_cards và analyze_hand.
 
 3. Xóa các mảng num_in_rank, num_in_suit, và card_exists khỏi poker.c, thay vào đó lưu các quân bài trong mảng 
-5 x 2. Mỗi dòng của mảng biểu diễn một quân bài. Ví dụ, nếu tên mảng là hand, thì hand[0][0] sẽ lưu hạng của 
+5 x 2. Mỗi dòng của  mảng biểu diễn một quân bài. Ví dụ, nếu tên mảng là hand, thì hand[0][0] sẽ lưu hạng của 
 quân bài đầu tiên và hand[0][1] sẽ lưu chất của quân bài đầu tiên.
 
 4. Điều chỉnh chương trình poker.c sao cho nó nhận diện thêm một trường hợp - "royal flush" 
@@ -50,21 +50,23 @@ Gợi ý: Đưa mã nguồn stack.c vào chương trình. Đọc các toán tử
 scanf(" %c", &ch)).
 
 7. Viết chương trình hỏi người dùng nhập vào một số và hiển thị số đó bằng các ký tự mô phỏng màn hình 7 đoạn.
-Ví dụ:
+
 Enter a number: 491-9014
      _       _   _
 |_| |_|   | |_| | |   | |_|
   |  _|   |  _| |_|   |   |
 Bỏ qua các ký tự không phải là chữ số. Viết chương trình sao cho số chữ số tối đa được kiểm soát bởi macro 
-tên là MAX_DIGITS, có gía trị bằng 10. Nếu số được nhập vào chứa nhiều chữ số hơn, thì các chữ số vượt giới hạn
-sẽ bị bỏ qua. Sử dụng 2 mảng: Một mảng segments là các phân đoạn, chứa các ánh xạ giữa chữ số và các phân đoạn 
-trong biểu diễn của nó. Mảng còn lại digits chứa cách ký tự sẽ được in ra màn hình. Mỗi chữ số được biểu diễn 
-như một ma trận ký tự 4 x 4. Viết chương trình của bạn với 4 hàm: main, clear_digits_array, process_digit, và 
-print_digits_array. Đây là nguyên mẫu của 3 hàm cuối cùng:
+tên là MAX_DIGITS, có giá trị bằng 10. Nếu số được nhập vào chứa nhiều chữ số hơn, thì các chữ số vượt giới hạn
+sẽ bị bỏ qua. Gợi ý: Sử dụng hai mảng bên ngoài. hai mảng bên ngoài. Một là mảng phân đoạn (xem Bài tập 6 
+trong Chương 8), lưu trữ dữ liệu đại diện cho sự tương ứng giữa các chữ số và phân đoạn. Mảng khác, các chữ số, 
+sẽ là một mảng các ký tự có 4 hàng (vì mỗi chữ số được phân đoạn cao 4 kí tự) và MAX_DIGITS * 4 cột 
+(chữ số rộng ba ký tự, nhưng cần một khoảng trống giữa các chữ số để đọc). Viết chương trình của bạn dưới 
+dạng bốn chức năng: Main, clear_digits_array, process_digit, và print_digits_array. Đây là nguyên mẫu 
+của 3 hàm cuối cùng:
 void clear_digits_array(void);
 void process_digit(int digit, int position);
 void print_digits_array(void);
 Hàm clear_digits_array sẽ khởi tạo mảng digits bằng những khoảng trắng, hàm process_digit sẽ lưu biểu diễn
-7 đoạn của chữ số vào các vị trí thích hượp trong mảng digits (các vị trí trong khoảng từ 0 tới MAX_DIGITS - 1). 
+7 đoạn của chữ số vào các vị trí thích hợp trong mảng digits (các vị trí trong khoảng từ 0 tới MAX_DIGITS - 1). 
 print_digits_array sẽ hiển thị các dòng của mảng digits, mỗi dòng của mảng trên một dòng màn hình, để có đầu ra 
 tương tự như trong ví dụ.
