@@ -1,46 +1,49 @@
  #include <stdio.h>
 int main() {
-char a[1000],*p;
+char a[1000],*p,*j;
+p = a;
 char e;
-int b,j;
+int b;
 printf("Enter a sentence: ");
-for (p = a;;p++)
+for (int i=0;;i++)
 {
-    scanf("%c",&a[i]);
-    if (a[i]=='.'||a[i]=='?'||a[i]=='!')
+    e = getchar();
+    if (e=='.'||e=='?'||e =='!')
     {
-        e = a[i];
         b = i;
+        *p = e;
         goto n;
     }
+    *p = e;
+    p++;
 }
 n:
 printf("Reversal of sentence: ");
-for (int i = b-1;i>=0;i--)
+for (char *i = p;i >= a;i--)
 {
-    if(a[i]== ' ')
+    if(*i == ' ')
     {
         j = i;
         for(;;)
         {
             j++;
-            if(a[j]==' '||a[j]=='.'||a[j]=='!'||a[j]=='?')
+            if(*j==' '||*j=='.'||*j=='!'||*j=='?')
             {
             printf(" ");
             goto w;
             }
-            printf("%c",a[j]);
+            printf("%c",*j);
         } 
     }
-    else if(i==0)
+    else if(i==a)
     {
        j = i;
         for(;;)
         {
             
-            printf("%c",a[j]);
+            printf("%c",*j);
             j++;
-            if(a[j]==' '||a[j]=='.'||a[j]=='!'||a[j]=='?')
+            if(*j==' '||*j=='.'||*j=='!'||*j=='?')
             {
             goto w;
             }
@@ -49,5 +52,6 @@ for (int i = b-1;i>=0;i--)
     w: ;
 }
 printf("%c",e);
+
   return 0;
 }

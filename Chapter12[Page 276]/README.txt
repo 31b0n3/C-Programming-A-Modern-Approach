@@ -32,7 +32,7 @@ trong mảng.
 5. Điều chỉnh bài 14 chương 8 sao cho nó sử dụng con trỏ thay cho số nguyên để lưu vị trí hiện tại trong 
 mảng chứa câu.
 
-6. Điều chỉnh chương trình qsort.c sao cho nó sử dụng các con trỏ low, high, và middle thay cho các chỉ số
+6. Điều chỉnh chương trình qsort.c ở phần 9.6 sao cho nó sử dụng các con trỏ low, high, và middle thay cho các chỉ số
 nguyên. Hàm split sẽ cần trả về con trỏ, không phải số nguyên.
 
 7. Điều chỉnh chương trình maxmin.c (11.4) sao cho hàm max_min sử dụng con trỏ thay cho số nguyên để 
